@@ -1,4 +1,4 @@
-Deployment link: https://summer25-project-minior-wjbu.onrender.com/login 
+Deployed Site: https://summer25-project-minior-wjbu.onrender.com/login 
 
 ## Getting Started
 
