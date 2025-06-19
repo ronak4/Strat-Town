@@ -1,0 +1,33 @@
+div.gameContainer {
+  display: grid;
+  height: var(--content-vh);
+  overflow-y: clip;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.gameContainer.skribbl-layout {
+  grid-template-columns: 3fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 10px; 
+}
+
+div.gameContainer.skribbl-layout > *:first-child {
+  grid-column: 1 / 2; 
+  grid-row: 1 / 3;
+  z-index: 1; 
+}
+
+div.gameContainer.skribbl-layout div.chatContainer {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3; 
+  height: auto;
+  width: auto; 
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+div.gameContainer.skribbl-layout div.chatContainer .messageList {
+  max-height: calc(100% - 40px); 
+  overflow-y: auto;
+}

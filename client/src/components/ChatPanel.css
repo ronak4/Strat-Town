@@ -1,0 +1,27 @@
+div.chatContainer {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  height: var(--content-vh);
+}
+
+div.chatContainer.skribbl-chat {
+  height: 250px;
+  min-height: 200px;
+  max-height: 40vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+div.chatContainer.skribbl-chat .messageList {
+  max-height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+div.chatContainer.skribbl-chat .messageCreation {
+  padding: 5px;
+}
+
+div.chatContainer.skribbl-chat .messageCreation input {
+  height: 28px;
+}

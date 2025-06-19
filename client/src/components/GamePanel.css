@@ -1,0 +1,56 @@
+.gamePanel {
+  padding: 1rem;
+  padding-right: 0;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+}
+
+.gameRoster {
+  position: relative;
+  height: auto; 
+  min-height: 15vh; 
+  padding-top: 8vh;
+  overflow: visible;
+}
+
+.gameRoster h2, 
+.gameRoster h3,
+.gameRoster .smallAndGray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  padding-bottom: 0.5em;
+}
+
+.gameRoster .smallAndGray {
+  top: 5vh;
+}
+
+.buttonsContainer {
+  position: absolute;
+  top: 1.5vh;
+  right: 1.5vw;
+  z-index: 15; 
+  background-color: white;
+}
+
+.dottedList {
+  max-height: 6vh;
+  height: 6vh;
+  overflow-y: scroll !important;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5em;
+  padding-bottom: 0.3em; 
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.gameFrame {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem; 
+}

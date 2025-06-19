@@ -1,0 +1,92 @@
+.user-hover-container {
+    position: relative;
+    display: inline;
+}
+
+.username-hover-trigger {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.username-hover-trigger:hover {
+    border-bottom-color: currentColor;
+}
+
+.user-hover-card {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0.75rem;
+    min-width: 200px;
+    max-width: 250px;
+    margin-top: 4px;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-hover-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-hover-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.user-hover-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.user-hover-display {
+    margin: 0 0 0.125rem 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--foreground);
+    word-wrap: break-word;
+}
+
+.user-hover-username {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--gray-foreground);
+    word-wrap: break-word;
+}
+
+.user-hover-bio {
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--hr-color);
+}
+
+.user-hover-bio p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--gray-foreground);
+    line-height: 1.4;
+    word-wrap: break-word;
+}
